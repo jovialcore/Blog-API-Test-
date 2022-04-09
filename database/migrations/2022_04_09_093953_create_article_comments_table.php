@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('article_comments', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('article_id');
+            $table->string('subject');
+            $table->text('comment');
+            $table->unsignedBigInteger('user_id');;
             $table->timestamps();
         });
     }
