@@ -25,8 +25,7 @@ class ArticleFactory extends Factory
             'title' =>  $this->faker->title,
             'full_text' => $this->faker->text,
             'cover' => $this->faker->imageUrl(),
-            'user_id' => $this->faker->numberBetween(1, 10),
-            'category_id' => $this->faker->numberBetween(1, 10),
+            'thumbnail' => $this->faker->imageUrl()
         ];
     }
 }
