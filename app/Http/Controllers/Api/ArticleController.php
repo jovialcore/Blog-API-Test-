@@ -51,8 +51,7 @@ class ArticleController extends Controller
      */
     public function show (Article $article)
     {
-       return new  ArticlePageResource($article);
-        // return response()->json($article);
+       return new ArticlePageResource($article);
     }
 
     /**
