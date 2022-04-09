@@ -4,6 +4,5 @@ BLOG_API_TEST
  
  Url article page: /api/articles/{id}
 
-### Seeding articles
-php artisan db:seed --class=Articleseed
+
 
