@@ -10,11 +10,12 @@ use Illuminate\Http\Request;
 
 
 /**
- * @OA\Get(
- *     path="/articles",
- *     @OA\Response(response="200", description="Display a listing of projects.")
- * )
- */
+
+@OA\Info(
+title="Blog Test Api",
+version="1.0.0",
+)
+*/
 class ArticleController extends Controller
 {
     /**
