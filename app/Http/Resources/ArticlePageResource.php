@@ -4,7 +4,7 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class ArticleResource extends JsonResource
+class ArticlePageResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -14,11 +14,15 @@ class ArticleResource extends JsonResource
      */
     public function toArray($request)
     {
-        return [
+         return [
             'id' => $this->id,
             'title' => $this->title,
-            'short_description' => substr($this->full_text, 0, 100), //return first 100 charceters
-            'cover' => $this->cover
+            'full_text' => $this->full_text,
+            'cover' => $this->cover,
+            // 'tags' => $this->tags,
+            // 'likes' => $this->likes,
+            // 'views' => $this->views,
+            // 'comments' => $this->comments,
         ];
     }
 }
