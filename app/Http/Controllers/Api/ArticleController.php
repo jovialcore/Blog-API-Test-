@@ -8,6 +8,13 @@ use App\Http\Resources\ArticleResource;
 use App\Models\Article;
 use Illuminate\Http\Request;
 
+
+/**
+ * @OA\Get(
+ *     path="/articles",
+ *     @OA\Response(response="200", description="Display a listing of projects.")
+ * )
+ */
 class ArticleController extends Controller
 {
     /**
